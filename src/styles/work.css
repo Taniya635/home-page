@@ -1,0 +1,102 @@
+.work-section-wrapper {
+    margin-top: 30rem;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .work-section-top  {
+    text-align: center;
+    max-width: 600px !important;
+  }
+  .work-section-top h1 {
+    max-width: 700px !important;
+  }
+  /* .work-section-top { */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  
+  /* } */
+  .work-section-top img{
+  
+    width: 500px;
+    height: 80vh;
+    border-radius: 1rem;
+    animation-name: slideFromLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Repeat the animation infinitely */
+    animation-delay: 8s;
+  }
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .paragraph{
+    margin-top: 7rem;
+    animation-name: slideFromRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Repeat the animation infinitely */
+    animation-delay: 8s;
+    color: wheat;
+  }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .work-section-info {
+    width: 290px;
+    min-height: 350px;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: #505050;
+    margin: 1rem 2rem;
+  }
+  .work-section-info h2 {
+    margin: 1rem 0rem;
+  }
+  .work-section-bottom {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .work-section-info p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+.work-more{
+    padding: 0.9rem 1.75rem;
+    background-color: #ecab48;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    font-size: 20px;
+}

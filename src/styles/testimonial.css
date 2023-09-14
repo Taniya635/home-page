@@ -1,0 +1,123 @@
+.testimonial-section-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    /* background-color: #f0f0f0; */
+     /* Background color */
+    height: 50vh; /* Center vertically in the viewport */
+    opacity: 0; /* Start with zero opacity */
+    border-radius: 1rem;
+    animation: fadeIn 4s ease-in-out infinite; 
+  
+    animation-delay: 1s;
+    /* Fade-in animation */
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .testimonal{
+    margin: auto;
+  
+  }
+  
+  .testimonial-section-bottom h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: wheat; /* Text color */
+  }
+  
+  .testimonial-section-bottom p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: white; /* Text color */
+  }
+  
+  .main-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 90px; /* Spacing between sub-divs */
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  .main-div>div>p,h3{
+    font-size: 12px;
+    color: white;
+  }
+  .sub-div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    
+    background: linear-gradient(45deg, #67bc43, #b2990d); /* Gradient background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    border: 2px solid transparent; /* Transparent border to reserve space */
+  }
+  .sub-div:hover {
+    /* background-color: #0056b3; */
+     /* Hover color */
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* .fade-image{
+    width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1s ease; 
+  transform: translateX(-50%);
+}
+.fade-image img{
+    max-width: 100%;
+    max-height: 100%;
+} */
+  
+  
+  .testimonial-section-bottom p {
+    font-weight: 700;
+    color: #515151;
+    max-width: 800px;
+    font-size: 1.1rem;
+    margin: 2rem 0rem;
+  }
+  .testimonials-stars-container svg {
+    margin: 0rem 0.25rem;
+    font-size: 1.5rem;
+    color: #fe9e0d;
+  }
+  .testimonial-section-bottom h2 {
+    margin-top: 1.5rem;
+  }
+  
